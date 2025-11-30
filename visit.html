@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit - Heartland</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container visit-container">
+        <div class="slide visit-slide1">
+            <div class="nav-bar">
+                <ul class="sidebar">
+                    <li><a onclick="hideSidebar()" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="visit.html">Visit</a></li>
+                </ul>
+                <a href="index.html" class="desk-nav">Home</a>
+                <a href="about.html" class="desk-nav">About</a>
+                <a href="menu.html" class="desk-nav">Menu</a>
+                <a href="visit.html" class="desk-nav">Visit</a>
+                <a onclick="showSidebar()" href="#" id="hamburger-icon"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+            </div>
+            <div class="visit-title-container">
+                <h1 class="visit-title"><span class="title-color">VISIT</span> US</h1>
+                <p class="visit-tagline">We'd Love to See You Here!</p>
+            </div>
+        </div>
+        <div class="slide visit-slide2">
+            <div class="slide-header visit-slide-header">
+                <h2>Plan Your Visit</h2>
+                <p>Whether you're joining us for a casual lunch, a family dinner, or a special celebration, Heartland Grille is the perfect place to enjoy delicious food and great company. Here's everything you need to know to plan your visit.</p>
+            </div>
+            <div class="visit-info-grid-2col">
+                <div class="visit-grid-item1">
+                    <h3>Location & Hours</h3>
+                    <p>123 Main Street, Anytown, USA</p>
+                    <p>Monday - Friday: 11:00 AM - 10:00 PM</p>
+                    <p>Saturday - Sunday: 9:00 AM - 11:00 PM</p>
+                </div>
+                <div class="visit-grid-item2">
+                    <h3>Reservations</h3>
+                    <p>We recommend making a reservation, especially for larger parties or weekend visits. You can book a table by calling us at (123) 456-7890 or using our online reservation system.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide visit-slide3">
+            <div class="slide-header book-header">
+                <h2>BOOK ONLINE!</h2>
+                <p>Use our convenient online booking system to reserve your table in advance. Simply select your preferred date, time, and party size, and we'll take care of the rest.</p>
+            </div>
+            <div class="form-container">
+                <div class="visit-form">
+                    <form action="">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" name="time" required>
+
+                        <label for="party-size">Party Size:</label>
+                        <input type="number" id="party-size" name="party-size" min="1" required>
+
+                        <label for="special-request">Special Request:</label>
+                        <textarea id="special-request" name="special-request" rows="4"></textarea>
+                    </form>
+                    <button type="submit">BOOK NOW!</button>
+                </div>
+            </div>
+        </div>
+        <div class="slide visit-slide-footer">
+            <div class="footer-content">
+                <div class="op-hours">
+                    <h3>Operating Hours</h3>
+                    <p>Mon-Fri: 11am - 10pm</p>
+                    <p>Sat-Sun: 9am - 11pm</p>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p>Bypass Road, San Vicente, Tarlac City</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <a href="mailto:info@heartlandgrille.com">Email: info@heartlandgrille.com</a>
+                </div>
+                <div class="copy-txt">
+                    <p>&copy; 2024 Heartland Grille. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
