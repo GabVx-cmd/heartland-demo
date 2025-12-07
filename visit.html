@@ -18,7 +18,7 @@
         <div class="slide visit-slide1">
             <div class="nav-bar">
                 <ul class="sidebar">
-                    <li><a onclick="hideSidebar()" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="http://www.w3.org/2000/svg" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a onclick="hideSidebar()" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="menu.html">Menu</a></li>
@@ -28,7 +28,7 @@
                 <a href="about.html" class="desk-nav">About</a>
                 <a href="menu.html" class="desk-nav">Menu</a>
                 <a href="visit.html" class="desk-nav">Visit</a>
-                <a onclick="showSidebar()" href="#" id="hamburger-icon"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="http://www.w3.org/2000/svg" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+                <a onclick="showSidebar()" href="#" id="hamburger-icon"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
             </div>
             <div class="visit-title-container">
                 <h1 class="visit-title"><span class="title-color">VISIT</span> US</h1>
@@ -53,7 +53,7 @@
                 </div>
             </div>
         </div>
-        <div class="slide visit-slide3">
+        <div class="slide visit-slide3" id="form-slide">
             <div class="slide-header book-header">
                 <h2>BOOK ONLINE!</h2>
                 <p>Use our convenient online booking system to reserve your table in advance. Simply select your preferred date, time, and party size, and we'll take care of the rest.</p>
@@ -103,16 +103,6 @@
             </div>
         </div>
     </div>
-    <script>
-        function showSidebar() {
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.style.display = 'flex';
-        }
-        function hideSidebar() {
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.style.display = 'none';
-        }
-    </script>
     <script src="script.js"></script>
 </body>
 </html>

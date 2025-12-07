@@ -267,10 +267,6 @@ html{
     text-decoration: none;
 }
 
-.grid-item3-colspan2 button:hover{
-    background-color: darkgoldenrod;
-}
-
 .grid-item3-colspan2 button{
     padding: 25px 50px;
     font-size: 1.5rem;
@@ -281,6 +277,10 @@ html{
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.grid-item3-colspan2 button:hover{
+    background-color: darkgoldenrod;
 }
 
 @media (max-width: 768px){
@@ -868,9 +868,9 @@ html{
     justify-content: center;
     align-items: center;
     max-width: 80%;
-    height: auto;
+    height: 100vh;
     gap: 50px;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .menu-card{
@@ -941,6 +941,7 @@ html{
     .menu-container-flex{
         flex-direction: column;
         max-width: 80%;
+        height: max-content;
         margin: 50px auto 50px auto;
         overflow: scroll;
     }
@@ -964,6 +965,7 @@ html{
     
     .menu-container-flex{
         width: 100%;
+        height: auto;
         gap: 30px;
         flex-wrap: wrap;
     }

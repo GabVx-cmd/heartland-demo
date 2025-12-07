@@ -12,3 +12,12 @@ function hideSidebar() {
     const sidebar = document.querySelector('.sidebar');
     sidebar.style.display = 'none';
 }
+
+var form = document.getElementById("form1");
+
+form.addEventListener("submit", function(event){
+    event.preventDefault();
+    form.reset();
+    alert("Form submitted successfully!");
+    form.attributes.action = "mailto:gabzdeleon1001@gmail.com";
+});
