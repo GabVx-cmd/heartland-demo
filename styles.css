@@ -269,7 +269,6 @@ html{
 
 .grid-item3-colspan2 button:hover{
     background-color: darkgoldenrod;
-    color: black;
 }
 
 .grid-item3-colspan2 button{
@@ -486,8 +485,7 @@ html{
 }
 
 .btn-container button:hover{
-    background-color: white;
-    color: black;
+    background-color: darkgoldenrod;
 }
 
 @media (max-width: 768px) {
@@ -872,6 +870,7 @@ html{
     max-width: 80%;
     height: auto;
     gap: 50px;
+    overflow-x: hidden;
 }
 
 .menu-card{
@@ -925,8 +924,8 @@ html{
 .menu-card h1{
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
     letter-spacing: 5px;
 }
 
@@ -1312,23 +1311,17 @@ html{
     font-family: 'Poppins', 'sans-serif';
 }
 
-.visit-form button{
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    background-color: transparent;
+.visit-form input[type=submit]{
+    font-size: 1.5rem;
+    background-color: darkgoldenrod;
     color: white;
-    border: 1px solid darkgoldenrod;
-    border-radius: 5px;
+    border: none;
     cursor: pointer;
-    margin: 10px auto 10px auto;
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.visit-form button:hover{
-    background-color: darkgoldenrod;
-    color: black;
+.visit-form input[type=submit]:hover{
+    background-color: goldenrod;
 }
 
 .visit-slide-footer{
@@ -1380,4 +1373,12 @@ html{
     100% {
         transform: translateY(0px);
     }
+}
+
+#preloader{
+    background: #ffffff url(img/Spinner-2.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
 }

@@ -11,11 +11,14 @@
     </style>
 </head>
 <body>
+    <div id="preloader">
+
+    </div>
     <div class="container visit-container">
         <div class="slide visit-slide1">
             <div class="nav-bar">
                 <ul class="sidebar">
-                    <li><a onclick="hideSidebar()" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a onclick="hideSidebar()" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="http://www.w3.org/2000/svg" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="menu.html">Menu</a></li>
@@ -25,7 +28,7 @@
                 <a href="about.html" class="desk-nav">About</a>
                 <a href="menu.html" class="desk-nav">Menu</a>
                 <a href="visit.html" class="desk-nav">Visit</a>
-                <a onclick="showSidebar()" href="#" id="hamburger-icon"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+                <a onclick="showSidebar()" href="#" id="hamburger-icon"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="http://www.w3.org/2000/svg" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
             </div>
             <div class="visit-title-container">
                 <h1 class="visit-title"><span class="title-color">VISIT</span> US</h1>
@@ -57,7 +60,7 @@
             </div>
             <div class="form-container">
                 <div class="visit-form">
-                    <form action="">
+                    <form id="form1">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required>
 
@@ -75,8 +78,9 @@
 
                         <label for="special-request">Special Request:</label>
                         <textarea id="special-request" name="special-request" rows="4"></textarea>
+
+                        <input type="submit" value="BOOK NOW!">
                     </form>
-                    <button type="submit">BOOK NOW!</button>
                 </div>
             </div>
         </div>
@@ -109,5 +113,6 @@
             sidebar.style.display = 'none';
         }
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
