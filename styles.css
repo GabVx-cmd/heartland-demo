@@ -356,7 +356,7 @@ html{
     height: 600px;
     align-items: center;
     align-content: center;
-    margin-top: 20px;
+    margin: 20px auto 50px auto;
     overflow: hidden;
 }
 
@@ -630,6 +630,12 @@ html{
 }
 
 @media (max-width: 768px) {
+    .slide-banner{
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/about-slide-banner-bg-mobile.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     .banner-title{
         font-size: 2.5rem;
         text-align: center;
@@ -848,8 +854,7 @@ html{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    background-color: #ffffff;
-    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(img/menu-slide1-bg.jpg);
+    background-color: #031013;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -994,7 +999,7 @@ html{
     align-items: flex-start;
     flex-wrap: wrap;
     height: max-content;
-    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(img/menu-slide2-bg.jpg);
+        background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(img/menu-slide1-bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
