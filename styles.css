@@ -87,11 +87,13 @@ html{
     font-size: 5rem;
     letter-spacing: 10px;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 .title-container p{
     font-size: 1.5rem;
     letter-spacing: 3px;
+    text-align: center;
 }
 
 .title-color{
@@ -968,7 +970,6 @@ html{
         max-width: 80%;
         height: max-content;
         margin: 50px auto 50px auto;
-        overflow: scroll;
     }
 
     .menu-card{
@@ -979,6 +980,10 @@ html{
     .menu-card h1{
         writing-mode: vertical-lr;
         font-size: 1.5rem;
+    }
+
+    .appetizer-card, .mains-card, .desserts-card, .beverages-card {
+        animation: none;
     }
 }
 
