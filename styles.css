@@ -678,10 +678,9 @@ html{
     .aboutslide1{
         height: max-content;
         background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/about-slide1-bg-mobile.jpg);
-        background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-position: center;
     }
 }
 
