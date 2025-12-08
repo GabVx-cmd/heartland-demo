@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+p{
+    text-align: justify;
+}
+
 body{
     font-family: 'Playfair Display', serif;
     background-size: cover;
@@ -855,17 +859,10 @@ html{
     align-items: flex-start;
 }
 
-.menu-slide1{
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #031013;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+@media (max-width: 768px) {
+    .slide-banner-menu{
+        background-position: bottom right;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px){
@@ -873,6 +870,21 @@ html{
         height: auto;
     }
     
+}
+
+.menu-slide1{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(img/menu-slide1-bg.jpg);
+    background-size: cover;
+    background-color: #031013;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .menu-container-flex{
@@ -1007,7 +1019,7 @@ html{
     align-items: flex-start;
     flex-wrap: wrap;
     height: max-content;
-        background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(img/menu-slide1-bg.jpg);
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(img/menu-slide1-bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
