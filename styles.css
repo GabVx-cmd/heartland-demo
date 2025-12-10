@@ -784,7 +784,7 @@ html{
     }
 
     .chef-image-right img{
-        height: auto;
+        height: 400px;
         width: 100%;
     }
 
@@ -812,7 +812,7 @@ html{
 @media (min-width: 769px) and (max-width: 1024px) {
     .wrapper-for-chef-section{
         flex-direction: column;
-        height: 75vh;
+        height: max-content;
     }
 
     .chef-image-right{
